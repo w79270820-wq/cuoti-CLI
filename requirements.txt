@@ -1,0 +1,13 @@
+# 桌面 App（推荐）
+pywebview>=4.0.0
+
+# macOS/Windows: 无额外依赖（使用系统 WebView）
+# Linux: pip install pywebview[gtk3]  或  pip install pywebview[qt]
+
+# OCR 功能（可选）
+# Claude 视觉模式：无需额外 Python 包，使用内置 urllib 调用 Anthropic API
+#   需设置环境变量 ANTHROPIC_API_KEY=sk-ant-...
+# DeepSeek 模式：图片先由本地 OCR 识别，DeepSeek 负责整理 JSON 字段
+#   推荐安装：python -m pip install rapidocr-onnxruntime
+#   可选安装：python -m pip install paddleocr
+#   需设置环境变量 DEEPSEEK_API_KEY=sk-...
